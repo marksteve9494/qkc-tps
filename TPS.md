@@ -4,43 +4,44 @@
 
 **Number of CPUs**
 
-[How many logical CPUs does the machine have for running one cluster?]
+[96]
 
 **Memory (GB)**
 
-[How much memory does the machine have for running one cluster? For example, 16G.]
+[369GB]
 
 **Storage (GB)**
 
-[Note down both the type and capacity of the storage on one machine. For example, SSD 1024G.]
+[98GB]
 
 **Network**
 
-[Comment on the network connecting clusters. For example, 1 Gbps LAN]
+[0.25 Gbps LAN]
 
 **Machine Type (Optional)**
 
-[If you are using public cloud service, note down the name of the provider and the machine type. For example, AWS EC2 m5.2xlarge.]
+[N/A]
 
 **Command Lines for Running Cluster**
 ```
-[Copy the command line here]
+[cd quarkchain/cluster
+pypy3 cluster.py --mine]
 ```
 
 **Peak TPS**
 
-[Note down the highest TPS observed.]
+[3300]
 
 **Video URL**
 
-[URL for the video showing how you produced the above TPS.]
+[https://youtu.be/EBcobOJI4PA]
 
 **Output From `stats` Tool**
 ```
-[Copy the complete output from `stats` here. It should capture the cluster configuration and at least 10 minute continuous samples (60 rows) with at least one sample showing the TPS claimed above.]
+[Tnesterp TPS Pending tx Confined tx BPS SBPS ROOT CPU 2018-10-11 16:14:00 843.30 3758 50598 6.92 0.17 12.31 2018-10-11 16:14:11 1164.82 5902 69889 6.77 0.22 14.39 2018-18-11 16:14:21 1524.20 9047 91452 6.88 0.23 7.79 2018-10-U 16:14:31 1929.33 12287 115760 7.00 0.27 11.74 2018-10-11 16:14:41 2287.77 12803 141686 7.13 430 13.85 2018-10-11 16:14:51 2486.62 14166 167246 7.23 0.35 10.75 2018-10-11 16:15:01 2654.80 11708 194509 7.30 0.36 11.79 2018-10-11 16:15:11 2703.07 17613 223830 7.12 0.40 12.48 2018-10-U 16:15:21 2838.95 13957 247400 7.38 0.43 10.15 2018-10-11 16:15:31 2881.73 15624 274844 7.40 0.47 12.74 2018-18-11 16:15:42 2986.88 18612 298259 7.58 0.45 10.71 2018-10-11 16:15:52 3047.77 15390 334040 7.63 0.45 11.87 2018-10-11 16:16:02 3088.65 15012 360295 7.67 0.40 9.93 2018-10-11 16:16:12 3085.48 13767 387415 7.72 0.28 11.00 2018-10-11 16:16:22 3040.68 16366 414996 7.63 0.27 11.05 2018-10-11 16:16:32 2018-10-11 16:16:42 11975 12609 447484 473183 8.00 8.28 0.30 0.38 U.48 11.60 2018-10-11 16:16:52 8794 499625 8.17 0.38 10.13 2018-10-11 16:17:02 3206.25 11004 526366 8.27 0.33 9.03 2018-10-11 16:17:13 3047.25 12964 546063 8.07 0.35 1 8.03 2018-10-U 16:17:23 2911.38 10628 569796 8.10 0.37 1 5.49 2018-10-11 16:17:33 2646.60 9362 571454 8.06 0.23 1 3.67 2018-10-11 1647:43 2005.73 6230 579325 7.45 0.15 1 3.14 2018-10-11 16:1743 1676.38 4497 582008 7.40 0.13 1 2.34 2018-10-11 16:18:03 1376.65 3173 583348 7.50 0.08 1 0.88 2018-10-11 16:18:13 2018-10-11 16:18:23 940.03 634.12 1688 1124 585211 585775 7.17 7.12 0.05 0.02 1 1 1.00 1.96 
+]
 ```
 
 **Additional Comment**
 
-[If you have special setup, e.g., running a single cluster over multiple machines, the above questionnaire might not fit. Note down
-whatever you want us to know here to help evaluate the result.]
+[Nothing to have a special but got only low tps]
